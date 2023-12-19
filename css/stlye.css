@@ -1,0 +1,44 @@
+
+body {
+  background-color: #f7ecde;
+  font-family: Pacifico, cursive;
+}
+h1 {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+h1::before {
+  content: "";
+  background-color: #fec260;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  transition: all 1s;
+}
+
+h1:hover::before {
+  height: 60%;
+}
+
+.line {
+  margin-top: 80px;
+  border: 1px dashed black;
+}
+.line2 {
+  margin-top: 30px;
+  border: 1px dashed black;
+}
+.book h2 {
+  background-image: linear-gradient(
+    to right,
+    rgb(60, 165, 92),
+    rgb(181, 172, 73)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
